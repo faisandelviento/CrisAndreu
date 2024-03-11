@@ -379,4 +379,46 @@ a{
     max-width: 30%;
 }
 
-
+.carousel {
+    position: relative;
+    max-width: 800px; /* Ajusteu a la mida desitjada */
+    margin: auto;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  label {
+    cursor: pointer;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #aaa;
+    margin: 0 5px;
+  }
+  
+  #slide1:checked ~ .slides .slide1,
+  #slide2:checked ~ .slides .slide2,
+  #slide3:checked ~ .slides .slide3 {
+    display: block;
+  }
+  
+  #slide1:checked ~ .navigation label:nth-child(1),
+  #slide2:checked ~ .navigation label:nth-child(2),
+  #slide3:checked ~ .navigation label:nth-child(3) {
+    background: #333;
+  }
+  
