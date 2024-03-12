@@ -421,4 +421,18 @@ label {
     max-width: 500px;
     margin-top: 20px;
 }
+.articulo-buscador{
+    display: flex;
+    flex-direction: row;
+}
+
+.articulo-buscador div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
   
+.articulo-buscador img{
+    width: 300px;
+
+}
