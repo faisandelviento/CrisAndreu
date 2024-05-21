@@ -1,1 +1,85 @@
+/* Variables for common styles */
+$text-dark: #ba4e2a;
+$text-light: #f4f4f4;
+$main-color-dark: #5d647e;
+$primary-color: #c0729b; // Retro color choice, adjust as needed
+$secondary-color: #8bc34a; 
+$font-secondary: 'Arial', sans-serif;
 
+/* Reset or normalize styles */
+#post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: $text-light;
+
+  img {
+    margin: 2rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+#aboutContent {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .headings {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .title {
+      .text-title {
+        color: $text-dark;
+        font-size: 2.5rem; // Adjust as needed
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  .content {
+    color: $text-dark;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: $font-secondary;
+    padding: 1rem;
+    background: rgba($primary-color, 0.1);
+    border-radius: 10px;
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #post {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    margin: 2rem auto;
+  }
+
+  #aboutContent {
+    .headings {
+      .title {
+        .text-title {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .content {
+      font-size: 0.9rem;
+    }
+  }
+}

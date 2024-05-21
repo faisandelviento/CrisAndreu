@@ -1,3 +1,66 @@
+/* Variables for common styles */
+/* Reset or normalize styles */
+#post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+#post img {
+  margin: 2rem;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
+#aboutContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#aboutContent .headings {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#aboutContent .headings .title .text-title {
+  color: #ba4e2a;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+#aboutContent .content {
+  color: #ba4e2a;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  padding: 1rem;
+  background: rgba(192, 114, 155, 0.1);
+  border-radius: 10px;
+}
+#aboutContent .content p {
+  text-align: justify;
+  margin-bottom: 1.2rem;
+}
+#aboutContent .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #post {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    margin: 2rem auto;
+  }
+  #aboutContent .headings .title .text-title {
+    font-size: 2rem;
+  }
+  #aboutContent .content {
+    font-size: 0.9rem;
+  }
+}
 
 /*# sourceMappingURL=stylesass.css.map */
