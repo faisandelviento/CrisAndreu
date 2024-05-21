@@ -91,7 +91,7 @@ a{
 }
 
 .btn-primary{
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: var(--secondary-color);
 }
 
@@ -366,7 +366,6 @@ a{
 .col-3{
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
-    padding-right: 35px;
 }
 
 .col-8{

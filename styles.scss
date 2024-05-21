@@ -2,7 +2,7 @@
 $text-dark: #ba4e2a;
 $text-light: #f4f4f4;
 $main-color-dark: #5d647e;
-$primary-color: #c0729b; // Retro color choice, adjust as needed
+$primary-color: #c0729b; 
 $secondary-color: #8bc34a; 
 $font-secondary: 'Arial', sans-serif;
 
@@ -228,6 +228,7 @@ $color-texto: #333;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
+
       
       // Estilos para el título del artículo
       .titulo-buscador {
@@ -235,12 +236,13 @@ $color-texto: #333;
         margin-bottom: 10px;
         font-weight: bold;
         color: $color-texto;
-        
+
         a {
           color: $color-texto;
           text-decoration: none;
           
           &:hover {
+            color: $secondary-color;
             text-decoration: underline;
           }
         }
@@ -252,3 +254,77 @@ $color-texto: #333;
       }
     }
   }
+
+//   FOOTER 
+
+// Estilos del footer
+#footer {
+  background-color: $color-texto;
+  color: $secondary-color;
+  padding: 2.5rem 2rem;
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .col-3 {
+        flex: 0 0 30%;
+        max-width: 30%;
+
+        @media (max-width: 768px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .footer-title {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        .secondary-title {
+          font-size: 1rem;
+        }
+
+        .tags {
+          margin-top: 20px;
+
+          .nav-link {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            color: $primary-color;
+          }
+        }
+
+        .social {
+          .nav-link {
+            background-color: $secondary-color;
+            color: $primary-color;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            &:hover {
+              background-color: darken($secondary-color, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyrights {
+    margin-top: 40px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
