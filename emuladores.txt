@@ -1,0 +1,7 @@
+FCEUX para NES
+Snes9x para SNES
+No$gba para Nintendo DS
+Project64 para Nintendo64
+VisualBoyAdvance para Game Boy Advance
+Stella para Atari
+MAME para juegos Arcade
