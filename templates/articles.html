@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gridy Blog</title>
+    <title>RetroCircuit</title>
 
     <!-- font awesome icons cdn -->
     <link
@@ -23,13 +23,13 @@
 
     <!-- custom style.css file -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylesass.css">
+    <link rel="stylesheet" href="/stylesass.css">
   </head>
   <body>
     <!-- Header -->
     <header id="header" class="shadow bg-light">
       <nav class="container navbar">
-        <a href="../index.html" class="nav-brand text-dark"> Gridy </a>
+        <a href="../index.html" class="nav-brand text-dark"> RetroCircuit </a>
 
         <!-- toggle button -->
         <button class="toggle-button">
@@ -51,10 +51,9 @@
             <div class="search-box">
               <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
             </div>
-            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
           </ul>
         </div>
       </nav>
@@ -64,56 +63,61 @@
     <main id="site-main">
       <section class="container">
         <div class="layout-2 row">
-          <div class="col-8">
-            <article id="post">
-            <!-- TITULO -->
-              <div class="headings text-center">
-                <div class="title">
-                    <h2 class="text-title text-dark display-1">
-                      ARTICULOS RECIENTES                    
-                    </h2>
+          <div class="">
+                        <!-- TITULO -->
+                        <div class="headings text-center">
+                          <div class="title">
+                              <h2 class="text-title text-dark display-1">
+                                ARTICULOS RECIENTES                    
+                              </h2>
+                          </div>
+                      </div>
+            <article id="pagArticulos"> 
+
+              <!-- Primer artículo -->
+              <article class="articulo-buscador">
+                <div>        
+                  <img src="../assets/img1.jpg">
                 </div>
-            </div>
-      <!-- Primer artículo -->
-      <article class="articulo-buscador">
-        <div>        
-          <img src="../assets/img1.jpg">
-        </div>
-        <div>
-          <h3 class="titulo-buscador"> <a href="../templates/article1.html">Restaurando una Commodore 64</a></h3>
-          <p>
-            Guía paso a paso para devolver la vida a esta icónica computadora de los 80.
-          </p></div>
-        
-      </article>
+                <div>
+                  <h3 class="titulo-buscador"> <a href="../templates/article1.html">Restaurando una Commodore 64</a></h3>
+                  <p>
+                    Guía paso a paso para devolver la vida a esta icónica computadora de los 80.
+                  </p></div>
+                
+              </article>
 
-      <!-- Segundo artículo -->
-      <article class="articulo-buscador">
-        <div>        
-          <img src="../assets/img2.jpg">
-        </div>
-        <div>
-          <h3 class="titulo-buscador"> <a href="../templates/article2.html">La Evolución de las Consolas Atari</a></h3>
-          <p>
-            Un recorrido por los modelos más influyentes de la marca Atari.
-          </p>
-        </div>
-        
-      </article>
+                  <!-- Segundo artículo -->
+              <article class="articulo-buscador">
+                <div>        
+                  <img src="../assets/img2.jpg">
+                </div>
+                <div>
+                  <h3 class="titulo-buscador"> <a href="../templates/article2.html">La Evolución de las Consolas Atari</a></h3>
+                  <p>
+                    Un recorrido por los modelos más influyentes de la marca Atari.
+                  </p>
+                </div>
+                
+              </article>
 
-      <!-- Tercer artículo -->
-      <article class="articulo-buscador">
-        <div>        
-          <img src="../assets/img7.jpg">
+                <!-- Tercer artículo -->
+                <article class="articulo-buscador">
+                  <div>        
+                    <img src="../assets/img7.jpg">
+                  </div>
+                  <div>
+                    <h3 class="titulo-buscador"> <a href="../templates/article3.html">Los Mejores Emuladores para Consolas Retro</a></h3>
+                    <p>
+                      Descubre los emuladores más fieles para revivir juegos clásicos en tu PC.
+                    </p>
+                  </div>
+                  
+                </article>
+                </article>
+          </div>
         </div>
-        <div>
-          <h3 class="titulo-buscador"> <a href="../templates/article3.html">Los Mejores Emuladores para Consolas Retro</a></h3>
-          <p>
-            Descubre los emuladores más fieles para revivir juegos clásicos en tu PC.
-          </p>
-        </div>
-        
-      </article>
+      </section>
 
       <!-- Puedes agregar más artículos aquí si los tienes -->
     </main>

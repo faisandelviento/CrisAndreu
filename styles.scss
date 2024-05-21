@@ -83,3 +83,172 @@ $font-secondary: 'Arial', sans-serif;
     }
   }
 }
+
+
+
+/* Fuentes y colores */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+#header {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $text-dark;
+  text-decoration: none;
+}
+
+.toggle-button {
+  display: none;
+  font-size: 1.5rem;
+  color: $text-dark;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: $text-dark;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box .nav-link {
+  padding: 0;
+}
+
+.fas, .fab {
+  font-size: 1.2rem;
+}
+
+.collapse {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: $text-light;
+  }
+
+  .collapse.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid $primary-color;
+  }
+
+  .search-box {
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid $primary-color;
+  }
+}
+
+$color-primario: #ff9900;
+$color-fondo: #f4f4f4;
+$color-texto: #333;
+
+
+#pagArticulos {
+    background-color: $color-fondo;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    
+    // Estilos para el título
+    .title {
+      margin-bottom: 30px;
+      
+      h2 {
+        color: $color-primario;
+        font-weight: bold;
+      }
+    }
+    
+    // Estilos para cada artículo
+    .articulo-buscador {
+      margin-bottom: 40px;
+      
+      // Estilos para la imagen
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      // Estilos para el título del artículo
+      .titulo-buscador {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: $color-texto;
+        
+        a {
+          color: $color-texto;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      // Estilos para el párrafo de descripción
+      p {
+        color: #666;
+      }
+    }
+  }
