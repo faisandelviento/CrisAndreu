@@ -7,12 +7,13 @@ $secondary-color: #8bc34a;
 $font-secondary: 'Arial', sans-serif;
 
 /* Reset or normalize styles */
-#post {
+#postAbout {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  margin-bottom: 10rem;
   background-color: $text-light;
 
   img {
@@ -223,7 +224,7 @@ $color-texto: #333;
       
       // Estilos para la imagen
       img {
-        max-width: 100%;
+        width: 40%;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -260,9 +261,16 @@ $color-texto: #333;
 // Estilos del footer
 #footer {
   background-color: $color-texto;
-  color: $secondary-color;
+  color: $text-dark;
   padding: 2.5rem 2rem;
+  
+.fas{
+  color: $text-dark;
+}
 
+  a{
+    color: $text-dark;
+  }
 
   .container {
     max-width: 1200px;
@@ -276,6 +284,7 @@ $color-texto: #333;
       .col-3 {
         flex: 0 0 30%;
         max-width: 30%;
+        padding: 0px;
 
         @media (max-width: 768px) {
           flex: 0 0 100%;
@@ -284,6 +293,7 @@ $color-texto: #333;
         }
 
         .footer-title {
+          padding-left: 2rem;
           font-size: 24px;
           margin-bottom: 20px;
         }
@@ -299,19 +309,27 @@ $color-texto: #333;
             margin-right: 10px;
             margin-bottom: 10px;
             border-radius: 20px;
-            color: $primary-color;
+            color: $text-dark;
+          }
+          .nav-link:hover {
+            background-color: $text-dark;
+            color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            transform: scale(1.05); 
           }
         }
 
         .social {
           .nav-link {
-            background-color: $secondary-color;
-            color: $primary-color;
+            background-color: $text-dark;
+            color: $color-texto;
             margin-right: 10px;
             margin-bottom: 10px;
 
             &:hover {
-              background-color: darken($secondary-color, 10%);
+              background-color: darken($color-texto, 10%);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+              transform: scale(1.1); 
             }
           }
         }

@@ -2,15 +2,16 @@
 /* Reset or normalize styles */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
-#post {
+#postAbout {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  margin-bottom: 10rem;
   background-color: #f4f4f4;
 }
-#post img {
+#postAbout img {
   margin: 2rem;
   display: block;
   max-width: 100%;
@@ -181,7 +182,7 @@ body {
   margin-bottom: 40px;
 }
 #pagArticulos .articulo-buscador img {
-  max-width: 100%;
+  width: 40%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -206,8 +207,14 @@ body {
 
 #footer {
   background-color: #333;
-  color: #8bc34a;
+  color: #ba4e2a;
   padding: 2.5rem 2rem;
+}
+#footer .fas {
+  color: #ba4e2a;
+}
+#footer a {
+  color: #ba4e2a;
 }
 #footer .container {
   max-width: 1200px;
@@ -221,6 +228,7 @@ body {
 #footer .container .row .col-3 {
   flex: 0 0 30%;
   max-width: 30%;
+  padding: 0px;
 }
 @media (max-width: 768px) {
   #footer .container .row .col-3 {
@@ -230,6 +238,7 @@ body {
   }
 }
 #footer .container .row .col-3 .footer-title {
+  padding-left: 2rem;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -243,16 +252,24 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 20px;
-  color: #c0729b;
+  color: #ba4e2a;
+}
+#footer .container .row .col-3 .tags .nav-link:hover {
+  background-color: #ba4e2a;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 #footer .container .row .col-3 .social .nav-link {
-  background-color: #8bc34a;
-  color: #c0729b;
+  background-color: #ba4e2a;
+  color: #333;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 #footer .container .row .col-3 .social .nav-link:hover {
-  background-color: #71a436;
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 #footer .copyrights {
   margin-top: 40px;
