@@ -170,6 +170,7 @@ body {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10rem;
 }
 #pagArticulos .title {
   margin-bottom: 30px;
@@ -182,7 +183,7 @@ body {
   margin-bottom: 40px;
 }
 #pagArticulos .articulo-buscador img {
-  width: 40%;
+  width: 25vw;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
