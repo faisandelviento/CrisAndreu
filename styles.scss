@@ -11,6 +11,47 @@ $color-texto: #333;
 
 $font-secondary: 'Arial', sans-serif;
 
+//LANFING PAGE ESTILOS 
+#indice {
+  margin: 0px;
+  padding: 5rem;
+      section {
+        background-color: $text-light ;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5rem;
+        .contenidoTexto{
+          align-content: center;
+          padding: 2rem;
+          text-align: justify;
+        }
+      }
+      h2 {
+          color: #333;
+      }
+      p {
+          color: #666;
+      }
+      .button {
+          display: inline-block;
+          background-color: #333;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+      }
+      .button:hover {
+          background-color: #555;
+      }
+      .gallery img {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+          display: block;
+          margin-bottom: 10px;
+      }
+}
 //estilo general
 img{
   border-radius: 10px;
