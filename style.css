@@ -6,7 +6,7 @@
     --light : #f8f9fa;
     --secondary: #adb5bd;
     --dark: #343a40;
-    --primary-color: #f15bb5;
+    --primary-color: #ba4e2a;
     --secondary-color: #2ec4b6;
     --border : #e9ecef;
 }
@@ -333,10 +333,6 @@ a{
     border-radius: 99px;
 }
 
-#sidebar .categories a:hover{
-    background-color: var(--primary-color);
-    color: var(--light);
-}
 
 /* ----------- .sidebar page ------- */
 

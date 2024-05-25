@@ -11,6 +11,67 @@ $color-texto: #333;
 
 $font-secondary: 'Arial', sans-serif;
 
+//estilo general
+img{
+  border-radius: 10px;
+}
+// articulo individual ESTILOS
+.meta {
+  .link {
+      i {
+        color: $text-dark; 
+      }
+      &:hover {
+        cursor: default;
+        i {
+          color: $primary-color; 
+        }
+      }
+  }
+}
+#sidebar .categories a:hover{
+  background-color: lighten($color: $text-dark, $amount: 10);
+  color: $color-fondo;
+
+}
+.post-footer{
+  .post-tags{
+    a{
+      border-radius: 20px;
+      background-color: #ba4e2a;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+  }
+  .post-author{
+    background-color: rgba($primary-color, 0.1);;
+    border-radius: 20px;
+  }
+  .author-info{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .text-secondary{
+      text-align: justify;
+    }
+    a{
+       background-color: transparent;
+       color: $color-texto;
+       box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+       :hover{
+        color: #ba4e2a;
+       }
+    }
+  }
+  .text-secondary{
+    a{
+      color: #2a2a2a;
+      background-color: transparent;
+    }
+  }
+
+}
+
 /* Reset or normalize styles */
 #postAbout {
   display: flex;
@@ -38,8 +99,9 @@ $font-secondary: 'Arial', sans-serif;
 
     .title {
       .text-title {
-        color: $text-dark;
-        font-size: 2.5rem; // Adjust as needed
+        color: $color-texto;
+        text-shadow: 1px 2px 2px rgba($text-dark, 0.1);
+        font-size: 2.5rem; 
         letter-spacing: 2px;
       }
     }
@@ -64,9 +126,8 @@ $font-secondary: 'Arial', sans-serif;
   }
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
-  #post {
+  #postAbout {
     flex-direction: column;
     text-align: center;
   }
@@ -237,14 +298,14 @@ body {
         margin-top: 20px;
         margin-bottom: 10px;
         font-weight: bold;
-        color: $color-texto;
+        color: $text-dark;
 
         a {
           color: $color-texto;
           text-decoration: none;
           
           &:hover {
-            color: $secondary-color;
+            color: $primary-color;
             text-decoration: underline;
           }
         }
@@ -346,4 +407,50 @@ body {
     }
   }
 }
+
+//ESTILOS BOTONES ARTIUCLO ANTERIOR Y SIGUIENTE
+
+.post-related {
+  margin-top: 1rem;
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    .prev, .next {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-texto;
+        transition: color 0.3s ease;
+
+        i {
+          margin-right: 0.5rem;
+          margin-left: 0.5rem;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover {
+          color: $primary-color;
+
+          i {
+            transform: translateX(-5px); 
+            &.fa-chevron-right {
+              transform: translateX(5px); 
+            }
+          }
+        }
+      }
+
+      &.text-right {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
 
