@@ -42,7 +42,7 @@ $font-secondary: 'Arial', sans-serif;
           border-radius: 5px;
       }
       .button:hover {
-          background-color: #555;
+          background-color: $text-dark;
       }
       .gallery img {
           width: 100%;
@@ -52,11 +52,11 @@ $font-secondary: 'Arial', sans-serif;
           margin-bottom: 10px;
       }
 }
-//estilo general
+// ESTILO FOTOA GENERAL
 img{
   border-radius: 10px;
 }
-// articulo individual ESTILOS
+// ARTICULOS INDIVIDUALES
 .meta {
   .link {
       i {
