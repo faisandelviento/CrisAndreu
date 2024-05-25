@@ -494,4 +494,47 @@ body {
   }
 }
 
+// Variables
+$gold-color: #ffd700;
+$bubble-size-min: 40px;
+$bubble-size-max: 80px;
+$animation-duration-min: 3s;
+$animation-duration-max: 6s;
 
+.separacion {
+  position: relative;
+  width: 100%;
+  height: 300px; // Ajusta l'altura segons sigui necessari
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pompa {
+  width: random($bubble-size-max - $bubble-size-min) + $bubble-size-min;
+  height: random($bubble-size-max - $bubble-size-min) + $bubble-size-min;
+  background: radial-gradient(circle, rgba(255,215,0,1) 0%, rgba(255,165,0,1) 100%);
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  animation: float random($animation-duration-max - $animation-duration-min) + $animation-duration-min ease-in-out infinite;
+  position: relative;
+
+  &:nth-child(odd) {
+    animation-direction: reverse;
+  }
+
+  &:nth-child(even) {
+    background: radial-gradient(circle, rgba(255,165,0,1) 0%, rgba(255,215,0,1) 100%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
